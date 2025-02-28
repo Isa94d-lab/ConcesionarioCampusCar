@@ -18,3 +18,14 @@ Una relacion de uno a muchos. Los vendedores pueden realizar multiples ventas pe
 
 ### Venta -> DetalleVenta 
 Una relacion de uno a muchos. Los datos de la venta pueden pertenecer al detalleVenta pero el detalleVenta no puede 
+
+### Cliente -> Venta 
+Una relacion de uno a muchos. Un cliente puede realizar varias ventas en cambio, la venta solo puede pertenecer a un cliente
+
+### Vehiculos -> DetalleVenta
+Una relacion de uno a muchos. Los vehiculos pueden pertencer a muchos detalleVenta pero un detalleVenta NO puede pertenecer a varios vehiculos ya que es exclusivo por cada uno
+
+## Modelo Logico 📌
+<img src="https://github.com/user-attachments/assets/e44a0b95-0df3-4295-9742-f50fd29cab37">
+
+El modelo logico nos permite definir las claves principales junto con las foraneas para una mejor coneccion del codigo
