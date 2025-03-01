@@ -28,4 +28,28 @@ Una relacion de uno a muchos. Los vehiculos pueden pertencer a muchos detalleVen
 ## Modelo Logico 📌
 <img src="https://github.com/user-attachments/assets/e44a0b95-0df3-4295-9742-f50fd29cab37">
 
-El modelo logico nos permite definir las claves principales junto con las foraneas para una mejor coneccion del codigo
+Este modelo logico muestra como se organizan los datos de la base de datos para manejar las ventas y servicios de mantenimiento de vehiculos. Aqui se definen las claves primarias para identificar cada registro y las claves foraneas que conectan las tablas entre si.
+
+Las tablas que forman parte del modelo son:
+
+**Clientes:** Guarda los datos de los clientes como nombre, telefono y direccion.
+**Vendedores:** Almacena la info de los vendedores, su fecha de ingreso y tipo de transaccion.
+**Vehiculos:** Contiene los detalles de los carros, como marca, modelo, tipo de combustible, precio y si estan disponibles.
+**Venta:** Registra las compras hechas por los clientes, indicando quien vendio y que cliente compro.
+**DetalleVenta:** Guarda los detalles de la venta, como el tipo de pago, la fecha y el total a pagar.
+**Mantenimiento:** Permite registrar cuando un vehiculo necesita mantenimiento.
+**DetalleMantenimiento:** Muestra que servicios se aplicaron al vehiculo y cuanto cuestan.
+**Servicios:** Describe los servicios que se ofrecen, como plomeria, pintura o revisiones mecanicas.
+
+## Modelo Fiscico 📌
+<img src="https://github.com/user-attachments/assets/e618c7d0-fced-4a24-8955-85690e690611">
+
+El modelo fisico establece los tipos de datos de los atributos de manera detallada
+
+Las tablas tienen los siguientes tipos de datos:
+
+**INTEGER:** Para guardar numeros enteros como IDs, cantidades o telefonos.
+**VARCHAR:** Para textos como nombres, direcciones o descripciones.
+**DATE:** Para fechas como la de ingreso o venta.
+**ENUM:** Para opciones predefinidas como el tipo de pago o el tipo de combustible.
+**DECIMAL:** Para precios y totales que llevan decimales.
